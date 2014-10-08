@@ -1,0 +1,12 @@
+<h1>New peep</h1>
+<%= form_for Peep.new do |f| %>
+  <div>
+    <h4>Header: </h4>
+    <%= f.text_field :header %>
+  </div>
+  <div>
+    <h4>Text: </h4>
+    <%= f.text_field :text %>
+  </div>
+  <%= f.submit %>
+<% end %>
